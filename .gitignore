@@ -1,0 +1,11 @@
+*.DS_Store
+*.log
+*.zip
+.idea
+/nbproject/
+/nbproject/private/
+/node_modules/
+/server_front/
+ad.js
+TODO
+test.html

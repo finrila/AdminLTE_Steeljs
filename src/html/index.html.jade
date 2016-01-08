@@ -1,0 +1,11 @@
+extends ./base.html
+
+block title
+    title Cat Index
+
+block bootLoader
+    script(src="#{resPath}lib/lib.js?v=#{version}")
+    script(src="#{resPath}lib/bootstrap/bootstrap.js?v=#{version}")
+    script(src="#{resPath}app/app.js?v=#{version}")
+    script.
+        steel.boot('app/app');

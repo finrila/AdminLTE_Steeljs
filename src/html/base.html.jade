@@ -1,0 +1,19 @@
+- var version = 2;
+- var resPath = 'http://adminlte.steeljs.org/';
+
+doctype html
+html
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    block title
+    link(href='#{resPath}/lib/base.css?v=#{version}', type='text/css', rel='stylesheet')
+    script.
+      var CONFIG = {
+        version: '#{version}',
+        resPath: '#{resPath}'
+      };
+  body.skin-blue.sidebar-mini.fixed
+    #pageloader.page-loader
+      .loader Loading...
+    #main
+  block bootLoader
